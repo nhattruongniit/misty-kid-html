@@ -1,0 +1,117 @@
+/*
+==========================================================================
+   START CART COMPONENT
+==========================================================================
+*/
+
+.c-cart {
+    width: 385px;
+    position: absolute;
+    top: 30px;
+    right: -150%;
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff;
+    border-bottom: 2px solid #ef4b69;
+    transition: all 0.3s linear;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 7px;
+    padding: 15px 5px;
+
+    &--one-button {
+        text-align: center;
+    }
+
+    &--multi-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.c-cart--hover:hover {
+    .c-cart {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.c-cart__title {
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 15px;
+    
+    p {
+        border-bottom: 1px solid #e9e9e9; 
+        padding-bottom: 13px;
+    }
+}
+
+.c-cart__item__img {
+    margin-right: 15px;
+
+    img {
+        width: 70px;
+    }
+}
+
+.c-cart__item {
+    display: block;
+}
+
+.c-cart__item__block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.c-cart__item__slimscroll {
+    padding: 0 15px;
+}
+.c-cart__item__content {
+    width: 100%;
+
+    &--link {
+        color: #383838;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    &--price {
+        @include font-family('DancingScriptOT');
+        font-size: 14px;
+        color: #e0514b;
+    }
+    
+    &--quantily {
+        font-size: 10px;
+        color: #aaaaaa;
+    }
+}
+
+.c-cart__button {
+    border-bottom: 0 !important;
+    margin-top: 16px;
+    padding: 0 15px;
+}
+
+.c-cart__wishlist {
+    right: 50%;
+    transform:translate(50%, 0);
+}
+
+@media (max-width: 1200px) {
+    .c-cart{
+        right: 0;
+    }
+}
+
+
+/*
+==========================================================================
+   END CART COMPONENT
+==========================================================================
+*/

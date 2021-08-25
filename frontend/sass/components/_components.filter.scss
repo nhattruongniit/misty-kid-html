@@ -1,0 +1,52 @@
+/*
+==========================================================================
+   START FILTER COMPONENT
+==========================================================================
+*/
+
+.c-filter {
+    &--center {
+        text-align: center;
+    }
+}
+
+.c-filter__link {
+    margin: 0 30px;
+    position: relative;
+    display: inline-block;
+    &:hover, &.active {
+        color: $global-color-primary;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        right: -45px;
+        width: 30px;
+        height: 2px;
+        background: #e1e1e1;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    &--noline {
+        &::after {
+            content: '';
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .c-filter__link {
+        margin: 0 25px; 
+        &::after {
+            right: -35px;
+            width: 20px;
+        }
+    }
+}
+
+/*
+==========================================================================
+   END FILTER COMPONENT
+==========================================================================
+*/

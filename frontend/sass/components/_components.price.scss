@@ -1,0 +1,33 @@
+/*
+==========================================================================
+   START PRICE COMPONENT
+==========================================================================
+*/
+.c-price__fix {
+    @include font-family('DancingScriptRegular');
+    font-size: 36px;
+    color: $global-color-primary;
+
+    &--small {
+        font-size: 18px;
+    }
+
+    
+}
+
+.c-price__off {
+    color: #a7aea6;
+    font-size: 24px;
+    display: inline-block;
+    margin-left: 15px;
+
+    &--small {
+        font-size: 14px;
+    }
+}
+
+/*
+==========================================================================
+   END PRICE COMPONENT
+==========================================================================
+*/

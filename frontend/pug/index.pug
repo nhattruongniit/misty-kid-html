@@ -1,0 +1,2373 @@
+extends ./components/layout.pug
+
+block title
+    - var titlePage = "Misty - Home"
+
+block content
+    // section banner
+    .c-banner
+        .c-banner__waves
+        .c-banner__mouse
+            img(src="./images/img-mouse.png", title="Mouse", alt="Mouse")
+        .c-banner__slider.js-banner
+            .c-banner__item
+                img.c-banner__people(src="./images/home/img-people.png", title="People", alt="People")
+                .c-banner__bg.c-banner__bg--img1
+                .c-banner__caption.c-banner__caption--middle
+                    .c-banner__effect.c-banner__title Fashion Boy
+                    h1.c-banner__effect.c-banner__heading AUTUMN WINTER
+                    .c-banner__effect.c-banner__lead 2017/18
+                    .c-banner__button
+                        a(href="#").c-button.c-button__white Shop Now
+            .c-banner__item
+                .c-banner__bg.c-banner__bg--img2
+                .c-banner__caption.c-banner__caption--bottom
+                    .c-banner__effect.c-banner__title.c-banner__title--secondary Welcome To StyleShop
+                    h1.c-banner__effect.c-banner__heading.c-banner__heading--secondary FLASH SALE OFF 
+                        span.c-banner__discount 70%
+                    .c-banner__button
+                        a(href="#").c-button.c-button__white Shop Now
+            .c-banner__item
+                .c-banner__bg.c-banner__bg--img3
+                .c-banner__caption.c-banner__caption--right
+                    .c-banner__effect.c-banner__title.c-banner__title--season SALE 50% OFF
+                    h1.c-banner__effect.c-banner__heading.c-banner__heading--season END OF SEASON
+                    .c-banner__button
+                        a(href="#").c-button.c-button__white Shop Now
+    // section special
+    .c-special
+        .o-container.js-special
+            .c-special__item
+                .c-special__img
+                    img(src="./images/img-discount.jpg", title="Product", alt="Product")
+                .c-special__description
+                    .c-special__title Special Offers
+                    h2.c-special__name Deal of the week
+                    .c-special__rating
+                        .o-rating
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star-o
+                        .c-special__rating__id Item #248LS
+                    .c-special__hr
+                    .c-special__content What you wear is how you present yourself to the world, especially today, when human contacts are so quick. Fashion is instant language.
+                    .c-special__money
+                        .c-price
+                            span.c-price__fix $45.00
+                            del.c-price__off $100.00
+                    .o-clock.js-clock
+                        .o-clock__item
+                            .o-clock__times
+                                .o-clock__number.js-clock__days
+                                .o-clock__text Days
+                        .o-clock__item
+                            .o-clock__times
+                                .o-clock__number.js-clock__hours
+                                .o-clock__text Hrs
+                        .o-clock__item
+                            .o-clock__times
+                                .o-clock__number.js-clock__mins
+                                .o-clock__text Mins
+                        .o-clock__item
+                            .o-clock__times
+                                .o-clock__number.js-clock__secs
+                                .o-clock__text Secs
+
+            .c-special__item
+                .c-special__img
+                    img(src="./images/img-discount2.jpg", title="Product", alt="Product")
+                .c-special__description
+                    .c-special__title Special Offers
+                    h2.c-special__name Deal of the week
+                    .c-special__rating
+                        .o-rating
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star-o
+                        .c-special__rating__id Item #248LS
+                    hr.c-special__hr
+                    .c-special__content What you wear is how you present yourself to the world, especially today, when human contacts are so quick. Fashion is instant language.
+                    .c-special__money
+                        .c-price
+                            span.c-price__fix $35.00
+                            del.c-price__off $350.00
+                    .o-clock.js-clock
+                        .o-clock__item
+                            .o-clock__times
+                                .o-clock__number.js-clock__days
+                                .o-clock__text Days
+                        .o-clock__item
+                            .o-clock__times
+                                .o-clock__number.js-clock__hours
+                                .o-clock__text Hrs
+                        .o-clock__item
+                            .o-clock__times
+                                .o-clock__number.js-clock__mins
+                                .o-clock__text Mins
+                        .o-clock__item
+                            .o-clock__times
+                                .o-clock__number.js-clock__secs
+                                .o-clock__text Secs
+
+    // section yield
+    section.c-yield
+        .o-container
+            h1.c-heading.c-heading--center
+                .c-heading__lead Kid Fashion
+                .c-heading__title All The Best For Your Kids
+                .c-heading__yao
+            .c-filter.c-filter--center.js-filter
+                a.c-filter__link.active(href="javascript:;", data-filter="js-yieldAllTop") All
+                a.c-filter__link(href="javascript:;", data-filter="js-yieldNew") New Products
+                a.c-filter__link(href="javascript:;", data-filter="js-yieldHot") Hot Products
+                a.c-filter__link(href="javascript:;", data-filter="js-yieldReview") Top Reviews
+                a.c-filter__link(href="javascript:;", data-filter="js-yieldTrending") Top Trending
+                a.c-filter__link.c-filter__link--noline(href="javascript:;", data-filter="js-yieldSale") Sale Off
+            .c-yield__wire
+                .c-yield__public.js-yieldAllTop(style="display: block; opacity: 1")
+                    .c-item__grid.c-item__grid--default
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-pipop.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__discount
+                                        span -15%
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-sort.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $72.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-sandal.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $21.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-shirt.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $39.00
+                .c-yield__public.js-yieldNew
+                    .c-item__grid.c-item__grid--default
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-pipop.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-coat3.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-glass.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-watch.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__discount
+                                        span -30%
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                .c-yield__public.js-yieldHot
+                    .c-item__grid.c-item__grid--default
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-watch1.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-bag2.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-bag3.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-bag6.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__discount
+                                        span -45%
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                .c-yield__public.js-yieldReview
+                    .c-item__grid.c-item__grid--default
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-bag4.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-coat5.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-glass1.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-bag2.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                .c-yield__public.js-yieldTrending
+                    .c-item__grid.c-item__grid--default
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-clothers.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-bag5.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-pants.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-watch3.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__discount
+                                        span -50%
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                .c-yield__public.js-yieldSale
+                    .c-item__grid.c-item__grid--default
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-watch2.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-watch.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-coat2.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-boots.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+
+    .c-fall
+        .c-fall__charBoy
+        .c-fall__piboy 
+            img(src="./images/home/img-boy-seat.png", title="People", alt="People")
+        .o-container
+            .c-fall__content
+                .c-fall__content__title
+                    h2 Baby Store Baby Shopping
+                .c-fall__content__lead FALL 10% OFF
+                a(href="#").c-button.c-button__white View Lookbook
+
+    section.c-yield
+        .o-container
+            h1.c-heading.c-heading--center
+                .c-heading__lead Kid Fashion
+                .c-heading__title Featured Products
+                .c-heading__yao
+            
+            .c-filter.c-filter--center.js-filterFeature
+                a.c-filter__link.active(href="javascript:;", data-filter="js-yieldAll") All
+                a.c-filter__link(href="javascript:;", data-filter="js-yieldClothings") Clothing
+                a.c-filter__link(href="javascript:;", data-filter="js-yieldPants") Pants
+                a.c-filter__link(href="javascript:;", data-filter="js-yieldCap") Caps & Snapback
+                a.c-filter__link(href="javascript:;", data-filter="js-yieldSneaker") Sneaker
+                a.c-filter__link(href="javascript:;", data-filter="js-yieldBackpack") Backpack
+                a.c-filter__link(href="javascript:;", data-filter="js-yieldWatch") Watch
+                a.c-filter__link.c-filter__link--noline(href="javascript:;", data-filter="js-yieldAccessories") Accessories
+            .c-yield__wire
+                .c-yield__public.js-yieldAll(style="display: block; opacity: 1")
+                    .c-item__grid.c-item__grid--default
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-pipop.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__discount
+                                        span -15%
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-sort.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $72.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-sandal.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $21.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-shirt.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $39.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-glass1.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $39.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-glass.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $21.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-clothers7.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $21.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-coat3.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $21.00
+                .c-yield__public.js-yieldClothings
+                    .c-item__grid.c-item__grid--default
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-clothers.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-clothers1.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-clothers2.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-clothers3.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__discount
+                                        span -30%
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-clothers4.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__discount
+                                        span -30%
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-clothers5.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__discount
+                                        span -30%
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-clothers6.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__discount
+                                        span -30%
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-clothers7.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                .c-yield__public.js-yieldPants
+                    .c-item__grid.c-item__grid--default
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-pants.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-pants1.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-pants2.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-pants3.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__discount
+                                        span -45%
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-pants4.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-pants5.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-pants6.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-pants7.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__discount
+                                        span -45%
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                .c-yield__public.js-yieldCap
+                    .c-item__grid.c-item__grid--default
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-cap.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-cap2.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-cap3.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-cap4.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-cap5.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-cap6.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-cap7.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-cap8.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                .c-yield__public.js-yieldSneaker
+                    .c-item__grid.c-item__grid--default
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-sneaker.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-sneaker2.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-sneaker3.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-sneaker4.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__discount
+                                        span -50%
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-sneaker5.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-sneaker6.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-sneaker7.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-sneaker8.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__discount
+                                        span -50%
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                .c-yield__public.js-yieldBackpack
+                    .c-item__grid.c-item__grid--default
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-bag.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-bag1.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-bag2.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-bag3.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-bag4.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-bag5.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-bag6.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-bag.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                .c-yield__public.js-yieldWatch
+                    .c-item__grid.c-item__grid--default
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-watch.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-watch1.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-watch2.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-watch3.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-watch4.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-watch5.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-watch6.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-watch2.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                .c-yield__public.js-yieldAccessories
+                    .c-item__grid.c-item__grid--default
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-watch.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-pipop.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-sandal.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-cap6.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-cap2.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-glass.jpg")
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-watch6.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+                        .c-item
+                            .c-item__quick 
+                                img(src="./images/img-cap3.jpg")
+                                .c-item__sticker
+                                    .c-sticker.c-sticker__new
+                                        span New
+                                .c-item__utils
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-search
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-shopping-basket
+                                    a(href="#").c-sticker__utils
+                                        i.fa.fa-compress
+                            h2.c-item__name  Misty Kids Fashion
+                            .o-rating.o-rating--small.c-item__rating
+                                i.fa.fa-sta
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                            .c-price
+                                span.c-price__fix.c-price__fix--small $45.00
+                                del.c-price__off.c-price__off--small $100.00
+
+    // section collection          
+    .c-collection
+        //- img.c-collection__car(src="./images/home/img-car.png", title="Collection Boy", alt="Boy")
+        img.c-collection__img(src="./images/home/img-boy.png", title="Collection Boy", alt="Boy")
+        .c-collection__content
+            .c-collection__lead Kids Simple
+            .c-collection__title Goat Collection
+        a.c-button.c-button__secondary(href="") Shop Now
+    // section news
+    section.c-news
+        .o-container
+            h1.c-heading.c-heading--center
+                .c-heading__title The Latest News
+                .c-heading__yao
+            .c-news__content
+                .c-news__box
+                    .c-news__image
+                        a(href="#")
+                            img(src="./images/home/img-news-girl.jpg", title="News", alt="News")
+                    .c-news__related
+                        .c-news__date 
+                            .c-news__date--day 9 
+                            .c-news__date--months Dec
+                        .c-news__details
+                            .c-news__lead
+                                .c-news__lead__tick Fashion Kid
+                                ul.c-news__lead__ul
+                                    li 
+                                        i.fa.fa-heart-o
+                                        span.c-news__lead__number 10
+                                    li 
+                                        i.fa.fa-comment-o 
+                                        span.c-news__lead__number 10
+                            h2.c-news__heading 
+                                a.c-news__heading__link(href="#") Summer fever: The top trends inpried by street style
+                            .c-news__description What you wear is how you present yourself to the world, especially today, when human contacts are so quick. Fashion is instant language.
+                .c-news__box
+                    .c-news__image
+                        a(href="#")
+                            img(src="./images/home/img-news-three.jpg", title="News", alt="News")
+                    .c-news__related
+                        .c-news__date 
+                            .c-news__date--day 9 
+                            .c-news__date--months Dec
+                        .c-news__details
+                            .c-news__lead
+                                .c-news__lead__tick Fashion Kid
+                                ul.c-news__lead__ul
+                                    li 
+                                        i.fa.fa-heart-o
+                                        span.c-news__lead__number 10
+                                    li 
+                                        i.fa.fa-comment-o 
+                                        span.c-news__lead__number 10
+                            h2.c-news__heading 
+                                a.c-news__heading__link(href="#") Summer fever: The top trends inpried by street style
+                            .c-news__description What you wear is how you present yourself to the world, especially today, when human contacts are so quick. Fashion is instant language.
+    
+    // section grateful
+    .c-grateful
+        .o-container
+            .c-grateful__content    
+                .c-grateful__bg.c-grateful__bg--ever
+                .c-grateful__bg.c-grateful__bg--happy
+                .c-grateful__bg.c-grateful__bg--thank
+                .c-grateful__bg.c-grateful__bg--mom
+                .c-grateful__bg.c-grateful__bg--love
+                .c-grateful__bg.c-grateful__bg--best
+                .c-grateful__light.c-grateful__light--left
+                .c-grateful__light.c-grateful__light--half
+                .c-grateful__light.c-grateful__light--middle
+                .c-grateful__light.c-grateful__light--right
+            
+    // section slogan 
+    section.c-slogan   
+        .o-container
+            h1.c-heading.c-heading--center
+                .c-heading__title What they says about us
+                .c-heading__yao
+            .c-slogan__quote
+                .c-slogan__box
+                    img.c-slogan__image(src="./images/home/img-quote.png", title="Quote", alt="Quote")
+                    .c-slogan__description.js-slogan__description
+                        .c-slogan__speaker 
+                            .c-slogan__speaker__content
+                                .c-slogan__speaker__text She clutched the matron by the arm, and forcing her into a chair by the bedside, was about to speak, when looking round, she caught sight of the two old women bending forward in the attitude of eager listeners. They belong to the old gentleman, said Oliver, wringing his hands; "to the good, kind, old gentleman who took me into his house, and had me nursed, when I was near dying of the fever. Oh, pray send them back; send him back the books and money. Keep me here all my life long; but pray, pray send them back.
+                                .c-slogan__speaker__name AMANDA
+                                .c-slogan__speaker__position CEO
+                        .c-slogan__speaker 
+                            .c-slogan__speaker__content
+                                .c-slogan__speaker__text She clutched the matron by the arm, and forcing her into a chair by the bedside, was about to speak, when looking round, she caught sight of the two old women bending forward in the attitude of eager listeners. They belong to the old gentleman, said Oliver, wringing his hands; "to the good, kind, old gentleman who took me into his house, and had me nursed, when I was near dying of the fever. Oh, pray send them back; send him back the books and money. Keep me here all my life long; but pray, pray send them back.
+                                .c-slogan__speaker__name VICTORIA
+                                .c-slogan__speaker__position CEO
+                        .c-slogan__speaker 
+                            .c-slogan__speaker__content
+                                .c-slogan__speaker__text She clutched the matron by the arm, and forcing her into a chair by the bedside, was about to speak, when looking round, she caught sight of the two old women bending forward in the attitude of eager listeners. They belong to the old gentleman, said Oliver, wringing his hands; "to the good, kind, old gentleman who took me into his house, and had me nursed, when I was near dying of the fever. Oh, pray send them back; send him back the books and money. Keep me here all my life long; but pray, pray send them back.
+                                .c-slogan__speaker__name BENEDICT
+                                .c-slogan__speaker__position CEO
+                        .c-slogan__speaker 
+                            .c-slogan__speaker__content
+                                .c-slogan__speaker__text She clutched the matron by the arm, and forcing her into a chair by the bedside, was about to speak, when looking round, she caught sight of the two old women bending forward in the attitude of eager listeners. They belong to the old gentleman, said Oliver, wringing his hands; "to the good, kind, old gentleman who took me into his house, and had me nursed, when I was near dying of the fever. Oh, pray send them back; send him back the books and money. Keep me here all my life long; but pray, pray send them back.
+                                .c-slogan__speaker__name KENETH
+                                .c-slogan__speaker__position CEO
+                        .c-slogan__speaker 
+                            .c-slogan__speaker__content
+                                .c-slogan__speaker__text She clutched the matron by the arm, and forcing her into a chair by the bedside, was about to speak, when looking round, she caught sight of the two old women bending forward in the attitude of eager listeners. They belong to the old gentleman, said Oliver, wringing his hands; "to the good, kind, old gentleman who took me into his house, and had me nursed, when I was near dying of the fever. Oh, pray send them back; send him back the books and money. Keep me here all my life long; but pray, pray send them back.
+                                .c-slogan__speaker__name GERRAL
+                                .c-slogan__speaker__position CEO
+                        .c-slogan__speaker 
+                            .c-slogan__speaker__content
+                                .c-slogan__speaker__text She clutched the matron by the arm, and forcing her into a chair by the bedside, was about to speak, when looking round, she caught sight of the two old women bending forward in the attitude of eager listeners. They belong to the old gentleman, said Oliver, wringing his hands; "to the good, kind, old gentleman who took me into his house, and had me nursed, when I was near dying of the fever. Oh, pray send them back; send him back the books and money. Keep me here all my life long; but pray, pray send them back.
+                                .c-slogan__speaker__name ROBERT
+                                .c-slogan__speaker__position CEO
+                .c-slogan__thumbs.js-slogan__thumbs
+                    .c-slogan__thumbs__item
+                        img(src="./images/home/img-slogan-3.png", title="Slogan", alt="Slogan")
+                        p.c-slogan__name AMANDA
+                    .c-slogan__thumbs__item
+                        img(src="./images/home/img-slogan-4.png", title="Slogan", alt="Slogan")
+                        p.c-slogan__name VICTORIA 
+                    .c-slogan__thumbs__item
+                        img(src="./images/home/img-slogan-2.png", title="Slogan", alt="Slogan")
+                        p.c-slogan__name BENEDICT
+                    .c-slogan__thumbs__item
+                        img(src="./images/home/img-slogan-5.png", title="Slogan", alt="Slogan")
+                        p.c-slogan__name KENETH
+                    .c-slogan__thumbs__item
+                        img(src="./images/home/img-slogan-3.png", title="Slogan", alt="Slogan")
+                        p.c-slogan__name GERRAL
+                    .c-slogan__thumbs__item
+                        img(src="./images/home/img-slogan-2.png", title="Slogan", alt="Slogan")
+                        p.c-slogan__name ROBERT
+    
+    // section thumbs
+    .c-thumbs.js-thumbs
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-1.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-2.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-3.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-4.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-5.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-6.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-7.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-3.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+
+    // section subscribe
+    section.c-subscribe
+        .o-container.o-container--small
+            h3.c-subscribe__heading Sign up to get the latest on sales, new releases and more
+            form.c-subscribe__form(action="#", method="POST")
+                input.c-input(type='text', name='emal', placeholder='Enter your e-mail')
+                button.c-button.c-button__primary(type='submit') Subscribe
+    
+   

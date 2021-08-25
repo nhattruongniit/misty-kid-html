@@ -1,0 +1,36 @@
+/*
+==========================================================================
+   START HEADING COMPONENT
+==========================================================================
+*/
+
+.c-heading {
+    &--center {
+        text-align: center;
+    }
+}
+
+.c-heading__lead {
+    @include font-family('DancingScriptRegular');
+    font-size: 18px;
+    color: $global-color-branch;
+    display: block;
+}
+
+.c-heading__title {
+    font-size: 40px;
+    font-weight: bold;
+    color: $global-color-extra;
+    margin: 0;
+}
+
+.c-heading__yao {
+    @include sprite($spritesheet-yao);
+    display: inline-block;
+}
+
+/*
+==========================================================================
+   END HEADING COMPONENT
+==========================================================================
+*/

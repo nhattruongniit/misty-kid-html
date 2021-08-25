@@ -1,0 +1,38 @@
+* {
+    outline:  0;
+}
+html {
+    font-size: $global-font-size; /* [1] */
+    line-height: $global-line-height / $global-font-size !important; /* [1] */
+    overflow-y: scroll; /* [2] */
+    min-height: 100%; /* [3] */
+}
+
+body {
+    height: 100%;
+    color: $global-color-secondary;
+    @include font-family('Montserrat');
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: #686868;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+p {
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}

@@ -1,0 +1,90 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$bg-grateful-1: (0px, 120px, 0px, -120px, 136px, 119px, 421px, 322px, '../images/spritesheet.png', 'bg-grateful-1', );
+$bg-grateful-2: (136px, 0px, -136px, 0px, 136px, 120px, 421px, 322px, '../images/spritesheet.png', 'bg-grateful-2', );
+$bg-grateful-3: (0px, 0px, 0px, 0px, 136px, 120px, 421px, 322px, '../images/spritesheet.png', 'bg-grateful-3', );
+$bg-grateful-4: (136px, 120px, -136px, -120px, 136px, 112px, 421px, 322px, '../images/spritesheet.png', 'bg-grateful-4', );
+$bg-grateful-5: (272px, 107px, -272px, -107px, 136px, 117px, 421px, 322px, '../images/spritesheet.png', 'bg-grateful-5', );
+$bg-grateful-6: (272px, 0px, -272px, 0px, 149px, 107px, 421px, 322px, '../images/spritesheet.png', 'bg-grateful-6', );
+$bg-shape: (0px, 239px, 0px, -239px, 82px, 83px, 421px, 322px, '../images/spritesheet.png', 'bg-shape', );
+$img-flag-en: (338px, 224px, -338px, -224px, 22px, 13px, 421px, 322px, '../images/spritesheet.png', 'img-flag-en', );
+$img-flag-france: (272px, 224px, -272px, -224px, 22px, 15px, 421px, 322px, '../images/spritesheet.png', 'img-flag-france', );
+$img-flag-germany: (294px, 224px, -294px, -224px, 22px, 15px, 421px, 322px, '../images/spritesheet.png', 'img-flag-germany', );
+$img-flag-russia: (316px, 224px, -316px, -224px, 22px, 13px, 421px, 322px, '../images/spritesheet.png', 'img-flag-russia', );
+$spritesheet-discount: (82px, 257px, -82px, -257px, 45px, 45px, 421px, 322px, '../images/spritesheet.png', 'spritesheet-discount', );
+$spritesheet-new: (127px, 257px, -127px, -257px, 45px, 45px, 421px, 322px, '../images/spritesheet.png', 'spritesheet-new', );
+$spritesheet-yao: (82px, 239px, -82px, -239px, 147px, 18px, 421px, 322px, '../images/spritesheet.png', 'spritesheet-yao', );
+$spritesheet-sprites: ($bg-grateful-1, $bg-grateful-2, $bg-grateful-3, $bg-grateful-4, $bg-grateful-5, $bg-grateful-6, $bg-shape, $img-flag-en, $img-flag-france, $img-flag-germany, $img-flag-russia, $spritesheet-discount, $spritesheet-new, $spritesheet-yao, );
+$spritesheet: (421px, 322px, '../images/spritesheet.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

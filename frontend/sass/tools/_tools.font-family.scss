@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'DancingScriptOT';
+    src: url('../fonts/DancingScriptOT.eot');
+    src: url('../fonts/DancingScriptOT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DancingScriptOT.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'SFUBaskervilleBookItalic';
+    src: url('../fonts/SFUBaskervilleBookItalic.eot');
+    src: url('../fonts/SFUBaskervilleBookItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFUBaskervilleBookItalic.woff') format('woff')
+}
+
+
+@font-face {
+    font-family: 'DancingScriptRegular';
+    src: url('../fonts/DancingScriptRegular.eot');
+    src: url('../fonts/DancingScriptRegular.eot') format('embedded-opentype'),
+         url('../fonts/DancingScriptRegular.woff2') format('woff2'),
+         url('../fonts/DancingScriptRegular.woff') format('woff'),
+         url('../fonts/DancingScriptRegular.ttf') format('truetype'),
+         url('../fonts/DancingScriptRegular.svg#DancingScriptRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'UTMGradoo';
+    src: url('../fonts/UTMGradoo.eot');
+    src: url('../fonts/UTMGradoo.eot') format('embedded-opentype'),
+         url('../fonts/UTMGradoo.woff2') format('woff2'),
+         url('../fonts/UTMGradoo.woff') format('woff'),
+         url('../fonts/UTMGradoo.ttf') format('truetype'),
+         url('../fonts/UTMGradoo.svg#UTMGradoo') format('svg');
+}
+
+@font-face {
+    font-family: 'BentonSansLight';
+    src: url('../fonts/BentonSansLight.eot');
+    src: url('../fonts/BentonSansLight.eot') format('embedded-opentype'),
+         url('../fonts/BentonSansLight.woff2') format('woff2'),
+         url('../fonts/BentonSansLight.woff') format('woff'),
+         url('../fonts/BentonSansLight.ttf') format('truetype'),
+         url('../fonts/BentonSansLight.svg#BentonSansLight') format('svg');
+}
+
+
+@mixin font-family($locale){
+    @if ($locale == 'Montserrat') {
+        font-family: "Montserrat", sans-serif;
+    }@else if ($locale == 'Playfair') {
+        font-family: "Playfair Display", sans-serif;
+        font-weight: bold;
+    }@else if ($locale == 'OpenSans') {
+        font-family: "Open Sans", sans-serif;
+    }@else if ($locale == 'DancingScriptOT') {
+        font-family: "DancingScriptOT", sans-serif;
+    }@else if ($locale == 'DancingScriptRegular') {
+        font-family: "DancingScriptRegular", sans-serif;
+    }@else if ($locale == 'UTMGradoo') {
+        font-family: "UTMGradoo", sans-serif;
+    }@else if ($locale == 'SFUBaskervilleBookItalic') {
+        font-family: "SFUBaskervilleBookItalic", sans-serif;
+    }@else if ($locale == 'BentonSansLight') {
+        font-family: "BentonSansLight", sans-serif;
+    }
+}

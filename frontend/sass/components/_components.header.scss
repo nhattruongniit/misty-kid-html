@@ -1,0 +1,155 @@
+/*
+==========================================================================
+   START HEADER COMPONENT
+==========================================================================
+*/
+
+.c-header {
+    @include font-family(Montserrat);
+    border-top: 2px solid #f87617;
+    padding: 15px 0 0 0;
+    margin-bottom: 5px;
+}
+
+.c-header__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-header__bar {
+    margin-right: 15px;
+}
+
+.c-header__topbar {
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: 1px solid #fafafa;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.c-header__bottombar {
+   
+}
+
+.c-header__ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0 -15px 0 0;
+}
+
+.c-header__li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    &:hover {
+        ul{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &+& {
+        border-left: 1px solid #dddddd;
+    }
+    i {
+        font-size: 14px;
+    }
+    span {
+        margin: 0 10px;
+        color:#686868;
+        font-size: 12px; 
+    }
+    &--languages {
+        img {
+            width: 22px;
+        }
+    }
+    &--wishlist {
+        span {
+            font-weight: bold;
+            color: #010101;
+        }
+    }
+}
+
+.c-header__mega {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.c-header__mega__ul {
+    
+}
+
+.c-header__mega__li {
+    position: relative;
+    display: inline-block;
+
+    &+li {
+        margin-left: 50px;
+    }
+    a {
+        span {
+            margin-right: 10px;
+        }
+    }
+}
+
+.c-header__cart {
+    position: relative;
+    margin-left: 50px;
+
+    &--number {
+        position: absolute;
+        z-index: 1;
+        top: -11px;
+        left: 10px;
+        background-color: $global-color-primary;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 13px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1100px) { 
+    .c-header__mega__li + li {
+        margin-left: 30px;
+    }
+    .c-header__mega__ul {
+        text-align: center;
+    }
+    .c-header__mega__li {
+        text-align: left;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .c-header__logo {
+        position: absolute;
+    }
+
+    .c-header__bar {
+        width: 100%;
+    }
+
+    .c-header__topbar {
+        border-bottom: 0;
+        margin-bottom: 60px;
+    }
+    .c-header__li {
+        padding: 0 10px;
+    }
+}
+
+/*
+==========================================================================
+   END HEADER COMPONENT
+==========================================================================
+*/

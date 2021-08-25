@@ -1,0 +1,55 @@
+/*
+==========================================================================
+   START STICKER COMPONENT
+==========================================================================
+*/
+
+.c-sticker {
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+        @include font-family('BentonSansLight');
+    }
+}
+
+.c-sticker__discount {
+    @include sprite($spritesheet-discount);
+}
+
+.c-sticker__new {
+    @include sprite($spritesheet-new);
+}
+
+.c-sticker__utils {
+    position: relative;
+    color: #fff;
+    background-color: $global-color-secondary;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all .3s linear;
+    
+    &+& {
+        margin-left: 10px;
+    }
+    &:hover {
+        background-color: $global-color-primary
+    }
+    .fa {
+        color: #fff;
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/*
+==========================================================================
+   END STICKER COMPONENT
+==========================================================================
+*/

@@ -1,0 +1,43 @@
+/*
+==========================================================================
+   START COLLECTION COMPONENT
+==========================================================================
+*/
+
+.c-collection {
+    text-align: center;
+    padding: 130px 0;
+    background: url(../images/home/banner-md.jpg) no-repeat center center;
+    background-size: cover;
+    color: #012d1f;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.c-collection__lead {
+    font-size: 50px;
+}
+
+.c-collection__title {
+    font-size: 75px;
+    margin: -20px 0 30px 0;
+    font-weight: bold;
+}
+
+.c-collection__img {
+    position: absolute;
+    right: 20px;
+    top: -13%;
+}
+
+.c-collection__car {
+    position: absolute;
+    left: -20px;
+    top: 5%;
+}
+
+/*
+==========================================================================
+   END COLLECTION COMPONENT
+==========================================================================
+*/

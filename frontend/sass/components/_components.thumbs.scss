@@ -1,0 +1,81 @@
+/*
+==========================================================================
+   START THUMBS COMPONENT
+==========================================================================
+*/
+
+.c-thumbs__box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: $global-color-extra;
+    transition: all .3s;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.c-thumbs__box__follow {
+    font-size: 10px;
+    color: #f1f1f1;
+}
+
+.c-thumbs__box__fa {
+    background: #f8941e;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    margin: 6px 10px 0 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.c-thumbs__box__instagram {
+    @include font-family("DancingScriptRegular");
+    background: #f8941e; 
+    background: -webkit-linear-gradient(left, #f8941e, #ef4b6a); 
+    background: -o-linear-gradient(right, #f8941e, #ef4b6a); 
+    background: -moz-linear-gradient(right, #f8941e, #ef4b6a); 
+    background: linear-gradient(to right, #f8941e, #ef4b6a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 25px; 
+}
+
+.c-thumbs__box__description  {
+    @include font-family("OpenSans");
+    font-size: 13px;
+    color: #949494;
+    line-height: 20px;
+    margin: 5px 0 10px 0;
+    line-height: 1.7;
+}
+
+.c-thumbs__box__button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 7px 30px;
+    border-radius: 30px;
+    border: 2px solid #f8941e;
+
+    &:hover {
+        color: #fff;
+    }
+}
+/*
+==========================================================================
+   END THUMBS COMPONENT
+==========================================================================
+*/

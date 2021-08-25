@@ -1,0 +1,151 @@
+/*
+==========================================================================
+   START SLOGAN COMPONENT
+==========================================================================
+*/
+
+.c-slogan {
+    margin: 80px 0;
+    position: relative;
+}
+
+.c-slogan__quote {
+    margin-top: 85px;
+}
+
+.c-slogan__box {
+    background: #d69f55 url(../images/home/bg-slogan.png) no-repeat right bottom;
+    padding: 0 60px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    background-size: auto 100%;
+    padding-top: 0;
+    margin-bottom: 50px;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        left: 15px;
+        top: 100%;
+        right: 0;
+        margin: auto;
+        width: 20px;
+        height: 10px;
+        background: #fff;
+        border: 7px solid #fff;
+        border-top: 7px solid #d69f55;
+        border-left: 13px solid #d69f55;
+    }
+}
+
+.c-slogan__image {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.c-slogan__description {
+    text-align: center;
+    height: 100%;
+}
+
+.c-slogan__name {
+    font-size: 12px;
+    color: #6e6e6e;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.c-slogan__speaker {
+    height: 100%;
+
+    &::before {
+        content: '';
+        width: 1px;
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.c-slogan__speaker__content {
+    display: inline-block;
+    vertical-align: middle;
+    width: 98%;
+    margin-top: 20px;
+}
+
+.c-slogan__speaker__text {
+    font-size: 14px;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+}
+
+.c-slogan__speaker__name {
+    color: #2b2b2b;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.c-slogan__speaker__position {
+    color: #ac9455;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.c-slogan__thumbs__item {
+    display: inline-block !important;
+    vertical-align: middle;
+    float: none;
+    img {
+        transition: all .3s;
+    }
+    &.slick-current {
+        img {
+            width: 113px;
+        }
+        .c-slogan__name {
+            display: none;
+        }
+    }
+}
+
+.c-slogan__thumbs .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    text-indent: -9999px;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.c-slogan__thumbs .slick-prev {
+    width: 0px;
+    height: 0px;
+    left: 0;
+    border-top: 10px solid transparent;
+    border-right: 17px solid #d1d1d1;
+    border-bottom: 10px solid transparent;
+}
+
+.c-slogan__thumbs .slick-next {
+    width: 0px;
+    height: 0px;
+    right: 0;
+    border-top: 10px solid transparent;
+    border-left: 17px solid #d1d1d1;
+    border-bottom: 10px solid transparent;
+}
+
+/*
+==========================================================================
+   END SLOGAN COMPONENT
+==========================================================================
+*/

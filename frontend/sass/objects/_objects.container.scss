@@ -1,0 +1,36 @@
+/*
+==========================================================================
+   START CONTAINER OBJECT
+==========================================================================
+*/
+
+.o-container {
+   width: 100%;
+   padding-right: 30px;
+   padding-left: 30px;
+   margin-right: auto;
+   margin-left: auto;
+
+   &--small {
+       width: 790px;
+   }
+}
+
+@media (max-width: 1200px) {
+   .o-container {
+      max-width: 100%;  
+   }
+}
+
+@media (min-width: 1200px) {
+   .o-container {
+      max-width: 1140px;
+   }
+}
+
+
+/*
+==========================================================================
+   END CONTAINER OBJECT
+==========================================================================
+*/

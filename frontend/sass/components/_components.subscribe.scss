@@ -1,0 +1,33 @@
+/*
+==========================================================================
+   START bg-subscribeSCRIBE COMPONENT
+==========================================================================
+*/
+
+.c-subscribe {
+    background: url(../images/bg-subscribe-1.png) no-repeat bottom left, url(../images/bg-subscribe-2.png) no-repeat top left, url(../images/bg-subscribe-3.png) no-repeat top right, url(../images/bg-subscribe-4.png) no-repeat bottom right, url(../images/bg-subscribe-5.png) no-repeat bottom right, #f5f1ea;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.c-subscribe__heading {
+    @include font-family('DancingScriptOT');
+    font-size: 24px;
+    color: #898989;
+    margin-bottom: 20px;
+}
+
+.c-subscribe__form {
+    display: flex;
+
+    input {
+        margin-right: 20px;
+    }
+}
+/*
+==========================================================================
+   END bg-subscribeSCRIBE COMPONENT
+==========================================================================
+*/

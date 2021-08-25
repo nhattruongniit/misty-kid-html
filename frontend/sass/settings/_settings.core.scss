@@ -1,0 +1,52 @@
+// COLORS
+$global-color-branch: #6cc111;
+$global-color-primary: #ef4b69;
+$global-color-secondary: #686868;
+$global-color-content: #000;
+$global-color-extra: #442402;
+
+//FONT SIZE
+$global-font-size: 16px !default;
+
+// HEADING
+$global-font-size-h1: 36px !default;
+$global-font-size-h2: 28px !default;
+$global-font-size-h3: 24px !default;
+$global-font-size-h4: 20px !default;
+$global-font-size-h5: 18px !default;
+$global-font-size-h6: 16px !default;
+
+$global-transition: all .3s linear !default;
+
+// Spacing values are determined based on your project’s global line height (i.e
+// your baseline grid). It is not recommended that you modify these following
+// variables (it can break your vertical rhythm), but if you need to, you can.
+$global-line-height: 24px !default;
+$global-spacing-unit: round($global-line-height) !default;
+
+// How many times larger/smaller than the default should our spacing unit
+// variants be?
+
+$global-spacing-unit-factor-tiny: 0.25 !default;
+$global-spacing-unit-factor-small: 0.5 !default;
+$global-spacing-unit-factor-large: 2 !default;
+$global-spacing-unit-factor-extra-large: 3 !default;
+$global-spacing-unit-factor-huge: 4 !default;
+$global-spacing-unit-factor-extra-huge: 5 !default;
+
+// Spacing value for margin
+$global-spacing-margin-unit: 8px !default;
+
+// How many times larger than the default should our margin spacing unit
+// variants be?
+
+$global-spacing-margin-fractions: 2 3 4 5 6 !default;
+
+// Private/framework-only reassignment. Do not alter anything below.
+
+$global-spacing-unit-tiny: round($global-spacing-unit * $global-spacing-unit-factor-tiny);
+$global-spacing-unit-small: round($global-spacing-unit * $global-spacing-unit-factor-small);
+$global-spacing-unit-large: round($global-spacing-unit * $global-spacing-unit-factor-large);
+$global-spacing-unit-extra-large: round($global-spacing-unit * $global-spacing-unit-factor-extra-large);
+$global-spacing-unit-huge: round($global-spacing-unit * $global-spacing-unit-factor-huge);
+$global-spacing-unit-extra-huge: round($global-spacing-unit * $global-spacing-unit-factor-extra-huge);

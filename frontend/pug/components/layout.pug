@@ -1,0 +1,63 @@
+doctype html
+html(lang='en')
+  head
+    block title 
+    title #{titlePage}
+    // meta
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no')
+    meta(http-equiv='content-language', content='en')
+    meta(name='robots', content='ALL')
+    meta(name='description', content='Misty')
+    meta(name='author', content='Misty')
+    meta(name='keywords', content='Misty')
+    // favicon
+    link(rel='shortcut icon', href='images/favicon.jpg')
+    link(rel='apple-touch-icon', href='images/apple-touch-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='images/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='images/apple-touch-icon-114x114.png')
+    // Google Fonts
+    link(type='text/css', rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat:300,400,700')
+    link(type='text/css', rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700')
+    link(type='text/css', rel='stylesheet', href='https://fonts.googleapis.com/css?family=Playfair+Display:300,400,700')
+    link(type='text/css', rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    // animate
+    link(rel='stylesheet', href='css/animate.min.css')
+    // bootstrap
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    // owl carousel
+    link(rel='stylesheet', href='css/owl.carousel.min.css')
+    // slick carousel
+    link(rel='stylesheet', href='css/slick.css')
+    // custom css
+    link(rel='stylesheet', href='css/main.css')
+    // responsive css
+    link(rel='stylesheet', href='css/responsive.css')
+  body 
+    .wrapper
+        // section header
+        header
+            include ./header.pug
+        main
+            block content
+        // section footer
+        footer
+            include ./footer.pug
+
+        // jquery
+        script(type="text/javascript" src="js/jquery.min.js")
+        // bootstrap js
+        script(type="text/javascript" src="js/bootstrap.min.js")
+        // slimscroll js
+        script(type="text/javascript" src="js/jquery.slimscroll.min.js")
+        // owl carousel
+        script(type="text/javascript" src="js/owl.carousel.min.js")
+        // slick carousel
+        script(type="text/javascript" src="js/slick.min.js")
+        // greensock js
+        script(type="text/javascript" src="js/TweenMax.min.js")
+        // custom js
+        script(type="text/javascript" src="js/main.js")
+        
+        

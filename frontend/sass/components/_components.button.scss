@@ -1,0 +1,126 @@
+/*
+==========================================================================
+   START BUTTON COMPONENT
+==========================================================================
+*/
+
+.c-button {
+    cursor: pointer;
+    transition: all .3s;
+    display: inline-block;
+    border: 0;
+    border-radius: 30px;
+    outline: 0;
+    font-size: 12px;
+    text-align: center;
+    width: 160px;
+    height: 46px;
+    line-height: 46px;
+}
+
+.c-button__view {
+    background-color: rgb(224, 81, 75);
+    border: 1px solid rgb(224, 81, 75);
+    color: #fff;
+
+    &:hover {
+        background-color: transparent;
+        color: rgb(224, 81, 75);
+    }
+}
+
+.c-button__gray {
+    background-color: $global-color-secondary;
+    border: 1px solid $global-color-secondary;
+    color: #fff;
+
+    &:hover {
+        background-color: transparent;
+        color: $global-color-secondary;
+    }
+}
+
+.c-button__primary {
+    background-color: $global-color-primary;
+    border: 1px solid $global-color-primary;
+    color: #fff;
+    font-size: 16px;
+
+    &:hover {
+        background-color: transparent;
+        color: $global-color-primary;
+    }
+}
+
+.c-button__secondary {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: $global-color-secondary;
+    font-size: 16px;
+
+    &:hover {
+        background-color: transparent;
+
+        color: #fff;
+    }
+}
+
+.c-button__white {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: $global-color-primary;
+    font-size: 16px;
+    font-weight: normal;
+
+    &:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+}
+
+.c-button__slider { 
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #f1d5ba;
+    background-color: rgba(139, 111, 83, 0.4);
+    border-radius: 50%;
+    text-align: center;
+    transition: all .3s linear;
+    &::before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 1px;
+        height: 100%;
+    }
+    &:hover {
+        .fa {
+            color: $global-color-primary;
+        }
+    }
+    &--next {
+        right: 40px;
+    }
+    &--prev {
+        left: 40px;
+    }
+}
+
+.c-button__slider .fa {
+    transition: all .3s linear;
+    color:#fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*
+==========================================================================
+   END BUTTON COMPONENT
+==========================================================================
+*/
+

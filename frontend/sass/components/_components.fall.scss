@@ -1,0 +1,59 @@
+/*
+==========================================================================
+   START FALL COMPONENT
+==========================================================================
+*/
+
+.c-fall {
+    width: 100%;
+    height: 300px;
+    background: url(../images/home/bg-fall.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.c-fall__piboy {
+    position: absolute;
+    left: 0;
+    top: -30px;
+    z-index: 1;
+    max-width: 500px;
+}
+
+.c-fall__content {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.c-fall__content__title {
+    @include font-family("DancingScriptRegular");
+    font-size: 36px;
+    color: #ffe400;
+    display: block;
+}
+
+.c-fall__content__lead {
+    margin: -10px 0 0 0;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.c-fall__charBoy {
+    // @include sprite($spritesheet-boy);
+    position: absolute;
+    right: 0;
+    top: -200px;
+}
+
+
+/*
+==========================================================================
+   END FALL COMPONENT
+==========================================================================
+*/
